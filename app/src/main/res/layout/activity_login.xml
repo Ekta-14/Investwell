@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="60dp"
+            android:textColor="#1E232C"
+            android:textStyle="bold"
+            android:textSize="36sp"
+            android:text="@string/login"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_email"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_login"
+            android:layout_marginTop="100dp"
+            android:hint=" "
+            android:textColorHint="#686A6A"
+            app:startIconDrawable="@drawable/email_icon"
+            app:startIconTint="#0E0E0E"
+            app:hintTextAppearance="@color/black"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/email_login"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:hint="@string/enter_email_address"
+                android:textColorHint="#686A6A"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_email"
+            android:layout_marginTop="24dp"
+            android:hint=" "
+            android:textColorHint="#686A6A"
+            app:startIconDrawable="@drawable/email_icon"
+            app:startIconTint="#0E0E0E"
+            app:endIconMode="password_toggle"
+            app:endIconTint="#9A9595"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/email_login"
+                android:textColor="@color/black"
+                android:inputType="numberPassword"
+                android:hint="@string/enter_password"
+                android:textColorHint="#686A6A"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <android.widget.Button
+            android:id="@+id/btn_login"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_password"
+            android:layout_marginTop="20dp"
+            android:text="@string/continue_with_email"
+            android:textColor="@color/white"
+            android:background="@drawable/continue_with_email"
+            android:elevation="40dp"
+            />
+
+        <android.widget.TextView
+            android:id="@+id/tv_orLoginWith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_login"
+            android:layout_marginTop="80dp"
+            android:text="@string/or_login_with"
+            android:textColor="#FF686A6A"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_facebook_login"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:src="@drawable/facebook_icon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_orLoginWith"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gmail"
+            />
+        <ImageButton
+            android:id="@+id/btn_google_login"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/gmail"
+            android:src="@drawable/gmail_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/btn_facebook_login"
+            app:layout_constraintTop_toBottomOf="@id/tv_orLoginWith" />
+        <TextView
+            android:id="@+id/tv_dont_have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/don_t_have_an_account_sign_up"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_orLoginWith"
+            android:layout_marginTop="100dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

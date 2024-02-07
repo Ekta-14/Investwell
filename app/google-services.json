@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "152171699816",
+    "project_id": "investwell-6910c",
+    "storage_bucket": "investwell-6910c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152171699816:android:fcd3aaccc3a455afe1a5dd",
+        "android_client_info": {
+          "package_name": "com.example.investwell"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCakbwaHiTcz2Rfj5MpETYW5VMUUiiBlO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

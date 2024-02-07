@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Investwell</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="continue_with_email">Continue with email address</string>
+    <string name="or_login_with">-------- or login with -------- </string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+    <string name="your_web_client_id">152171699816-0uromn5rg8gqvnnp11932bleo8js5n3p.apps.googleusercontent.com</string>
+    <string name="enter_password">Enter password</string>
+    <string name="already_have_an_account_login_in">Already Have an account? Login In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_occupation">Enter occupation</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="Day">Day</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
